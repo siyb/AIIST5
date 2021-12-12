@@ -10,6 +10,8 @@ import com.carmanufacturer.factory.parts.sport.SportWheel;
 
 public class Main {
     public static void main(String[] args) {
+        // construct a Frankencar using our assemblyline. Note that every method returns an instance of the assembly
+        // line, so we can just chain the calls.
         Car frankenCar = AssemblyLine
                 .newAssemblyLine()
                 .newCar("Model 1")
